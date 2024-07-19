@@ -2,7 +2,7 @@
 
 <a href="https://modu6ah.com"><img src="https://user-images.githubusercontent.com/91789496/182133398-7ff4bbd2-96f9-43bc-a996-63522d57607d.png"></a>
 
-## 🏠 [모두의 육아 사이트 주소](https://modu6ah.com) 
+## 🏠 [모두의 육아 사이트 주소](https://modu6ah.com) (서비스 종료)
 
 <hr>
 
