@@ -1,8 +1,10 @@
-// 초기 세팅
 require("dotenv").config();
 const app = require("./app");
 const server = require("http").createServer(app);
 const socketIO = require("socket.io");
+
+// Redis 어댑터 설정 가져오기
+const { pubClient, subClient, createAdapter } = require('./redis.adapter');
 
 // DB
 const chatRoom = require("./schemas/chatRoom");
@@ -21,6 +23,9 @@ const io = socketIO(server, {
         credentials: true,
     },
 });
+
+// Redis 어댑터 적용
+io.adapter(createAdapter(pubClient, subClient));
 
 // 연결 시작
 io.on("connection", (socket) => {
